@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="STYLES.CSS" rel="stylesheet">
+    <link href="dash-styles.css" rel="stylesheet">
+    <script src="popup.js" defer></script>
+    <script src="dashboard.js" type="module" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form style="height: fit-content;">
+        <div class="profile">
+            <img src="https://xsgames.co/randomusers/avatar.php?g=pixel" alt="" style="width:110px;" id="image">
+        </div>
+        <h3>Welcome</h3>
+        <label for="username">Email</label>
+        <input type="text" placeholder="User@gmail.com" id="email" readonly>
+        <label for="username">Username</label>
+        <input type="text" placeholder="@User" id="username" readonly>
+        <button id="logout">Log Out</button>
+        <div class="actions">
+            <button id="showResetPopup">Reset Password</button>
+            <button class="update" id="toggle">Update Details</button>
+        </div>
+    </form>
+    <div class="popup" id="updatePopup">
+        <form>
+            <label for="popupUsername">Username</label>
+            <input type="text" id="popupUsername" placeholder="Enter your username">
+            <label for="popupEmail">Email</label>
+            <input type="text" id="popupEmail" placeholder="Enter your email">
+            <button id="update">Update</button>
+            <button id="removeUpdatePopup">Cancel</button>
+        </form>
+    </div>
+    <div class="popup" id="reset">
+        <p>Are you sure you want to reset your password?</p>
+        <button id="confirmReset">Yes</button>
+        <button id="hideResetPopup">No</button>
+    </div>
+</body>
+</html>

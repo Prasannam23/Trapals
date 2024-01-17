@@ -87,7 +87,7 @@ img {
 /* main */
 
 .main {
-  background: url(/Imgs/Showcase\ Cover.png) no-repeat center center/cover;
+  background: url(ShowcaseCover.png) no-repeat center center/cover;
   min-height: 800px;
   border-radius: 0 0 50px 50px;
 }
@@ -522,4 +522,8 @@ footer {
 .toggleClose
 {
   display: none;
+}
+
+.textb{
+  font-size: 25px;
 }
