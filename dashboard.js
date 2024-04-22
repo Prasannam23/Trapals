@@ -50,4 +50,36 @@ confirmReset.addEventListener("click", function (event) {
         .catch(function (error) {
             alert(error.message);
         });
-});
+
+
+    });
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const authButton = document.getElementById("authButton");
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                authButton.innerText = "Logout";
+            } else {
+                authButton.innerText = "Login";
+            }
+        });
+
+        authButton.addEventListener("click", function () {
+            const user = firebase.auth().currentUser;
+
+            if (user) {
+                firebase.auth().signOut().then(function () {
+                    console.log("User signed out");
+                }).catch(function (error) {
+                    console.error("Error signing out:", error);
+                });
+            } else {
+                console.log("User not signed in, implement login logic");
+                // Implement your login logic here
+            }
+        });
+    });

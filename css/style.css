@@ -142,14 +142,27 @@ img {
   opacity: 0.7;
 }
 
-.profile-pic {
-  width: 48px;
-  height: 48px;
+/* .authButton{
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-.profile-pic img {
-  border-radius: 50%;
-  width: 100%;
+
+.authButton{
+  color: black;
+} */
+
+.authButton{
+  float: right;
 }
+
 
 /* showcase CONTENT */
 .showcase-content {
@@ -527,3 +540,15 @@ footer {
 .textb{
   font-size: 25px;
 }
+
+.footer-top { grid-template-columns: 1fr 0.4fr 0.4fr 0.4fr 0.4fr; }
+
+  .footer-brand {
+    grid-column: auto;
+    padding-inline-end: 100px;
+  }
+
+.copyright{
+  color: black;
+}
+

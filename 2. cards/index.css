@@ -1,0 +1,94 @@
+* {
+    padding: 5px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-content: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 100vh;
+    background-color: #e8f1ef;
+    margin: 0; /* Remove default body margin */
+}
+
+.card {
+    width: 300px;
+    height: min-content;
+    padding: 0;
+    margin: 50px 15px 20px 15px; /* Adjusted margin */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .card-title h3 {
+    color: #1b2430;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+.card .card-title p {
+    color: #b3bac3;
+    font-size: 18px;
+    margin-top: -4px;
+    letter-spacing: -0.5px;
+}
+
+.card .card-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.card .card-details span {
+    color: #b3bac3;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.card .card-details p {
+    color: #1b2430;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -2px;
+}
+
+.card button {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #1b2430;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card button:hover {
+    background-color: #aa0000;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.sd-container button{
+    background-color: transparent;
+    color: black;
+    align-items: center;
+    padding-left: 30px;
+   margin: 5px;
+
+}
+
+
